@@ -1,0 +1,113 @@
+body {
+  background-color: #225dbd;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  position: absolute;
+  justify-content: center;
+  width: 20rem;
+  height: 40rem;
+  margin-top: 10rem;
+  margin-left: 30rem;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 25px black;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: 250ms ease all;
+}
+
+.container2 {
+  position: absolute;
+  width: 20rem;
+  height: 40rem;
+  margin-top: 10rem;
+  margin-left: 53rem;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 25px black;
+  z-index: -1;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: 250ms ease all;
+}
+
+.word {
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 26rem;
+  opacity: 0;
+}
+.word p {
+  color: gray;
+  font-weight: 600;
+  font-size: 18px;
+}
+.word span {
+  color: green;
+  font-weight: 600;
+  font-size: 20px;
+}
+.word button {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0 0 5px 5px;
+  background-color: #332d2d;
+  color: white;
+  font-size: 18px;
+}
+
+.space {
+  position: absolute;
+  height: 20rem;
+  width: 100%;
+  margin-top: 45rem;
+}
+
+.image1:hover .container1 {
+  transform: scale(1, 1);
+  opacity: 1;
+}
+.image1:hover .word {
+  opacity: 1;
+}
+.image1:hover img {
+  transform: translateY(-10%);
+}
+.image1 img {
+  position: absolute;
+  width: 17rem;
+  height: 26rem;
+  margin-top: 9.5rem;
+  margin-left: 31.5rem;
+  box-shadow: 2px 2px 15px #474141;
+  z-index: 10;
+  transition: 250ms ease all;
+}
+
+.image2:hover .container2 {
+  transform: scale(1, 1);
+  opacity: 1;
+}
+.image2:hover .word {
+  opacity: 1;
+}
+.image2:hover img {
+  transform: translateY(-10%);
+}
+.image2 img {
+  position: absolute;
+  width: 17rem;
+  height: 26rem;
+  margin-top: 9.5rem;
+  margin-left: 54.5rem;
+  box-shadow: 2px 2px 15px #474141;
+  transition: 250ms ease all;
+}
+
+/*# sourceMappingURL=style.css.map */
